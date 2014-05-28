@@ -116,7 +116,20 @@ To be certain, just add it manually to a vocabulary and see whether it is being 
 @todo: add screenshot
 
 Third, we want to add an action saying "whenever new taxonomy vocabulary is created, add our cool field to it". To do so we need to hook into Drupal core bundle creation (thankfully, vocabulary is an entity, and each new vocabulary is a bundle...), and this is done via <a href="https://api.drupal.org/api/drupal/modules!field!field.api.php/function/hook_field_attach_create_bundle/7" target=_blank>hook_field_attach_create_bundle</a>. What you need to do is to create an implmenetation for this hook in your module, and there to use the nicely-structured OG API `og_create_field` with the name of the field you defined in the last step.
-@todo: add source code
+```php
+<?php
+/**
+ * Implements hook_field_attach_create_bundle().
+ *
+ * When creating a new vocabulary attach the right fields.
+ */
+function my_module_field_attach_create_bundle($entity_type, $bundle) {
+  if ($entity_type != 'taxonomy_term') {
+    return;
+  }
+  og_create_field('my_field', $entity_type, $bundle);
+}
+```
 
 Yep, "this is it" ! 
 Is it ?
