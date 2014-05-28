@@ -89,7 +89,7 @@ function my_module_og_fields_info() {
 
       // Note: "field_" prefix was removed manually.
       'field_name' => 'my_field',
-      'label' => 'Show description',
+      'label' => 'My field',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
