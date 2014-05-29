@@ -134,6 +134,6 @@ function my_module_field_attach_create_bundle($entity_type, $bundle) {
 Yep, "this is it" ! <br/>
 Is it ?<br/>
 It is, as long as you build new site. Considering you might handle an existing OG site, that might already have a bunch of taxonomy vocabularies, you must handle all of them as well, and the best way to do it is automatically via the installation or upgrade process.<BR/>
-On how to use the hook_install, hook_update_n, and when and how to use the Batch API - in another post.<BR/>
+On how to use the `hook_install`, `hook_update_n`, and when and how to use the Batch API - in another post.<BR/>
 Hope this post helps anyone,<BR/>
 Shushu
