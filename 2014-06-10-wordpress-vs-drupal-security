@@ -1,9 +1,6 @@
-geektime recommendations asks not to install modules and instead develop by yourself.
-http://www.geektime.co.il/dark-side-comes-to-geektime/
-
 Geektime is a fairly interesting Israeli geeks news site. According to Alexa it is ranked as #58 in Israel, which is not a bad place to be.
 
-Couple of weeks ago they published a post titled <a href="" target=_blank>"The dark side comes to geektime"</a>, describing how they were hacked, and how they reacted to it.
+Couple of weeks ago they published a post titled <a href="http://www.geektime.co.il/dark-side-comes-to-geektime/" target=_blank>"The dark side comes to geektime"</a>, describing how they were hacked, and how they reacted to it.
 (in few words, for the non Hebrew readers - their server had other WordPress based site with an old unsecured plugin, which was used as the door for installing a Litecoin mining script).
 
 It was interesting to read this, especially because it is somehow rare to read such a sincere post.
@@ -18,17 +15,21 @@ Being hacked is not the end of the world, but I did bothered from the summery of
 Now, while the first and second recommendations bothered me in the Drupal-vs.-WordPress eco-system point of view, the third really bothered me in a wider aspect, on the misunderstanding of the open source world.
 
 But first, regarding to Drupal vs. WordPress - since I only have limited experience and understanding of the WordPress eco-system, I wasn't able to say whether it is a problem in it, or only a problem on the way Geektime uses it.
-So I contacted an online friend of mine who works for Automattic to hear what he has to say about the situation. He actually was bothered like me from this post, and said he plans to contact their CTO to see how they can help him do better job next time.
+So I contacted an online friend of mine who works for <a href="http://automattic.com/" target=_blank>Automattic</a> to hear what he has to say about the situation.
+He actually was bothered like me from this post, and said he plans to contact their CTO to see how they can help him do better job next time.
 But meanwhile, he said that by default, the WordPress core level is being automatically updated with critical upgrades, but for plugins the site owner will need to check manually.
 
 Having automatic upgrade might be a simple solution for non-critical sites, but I don't see how real production sites can allow this, since I am certain there is no 100% future-proof code in WordPress that makes it unbreakable.
 When you own a site you need to handle the upgrade by yourself or by the hosting company that gives you this service, but it all needs to be done only after proper testing to verify it will work.
 
 In Drupal eco-system, by default the administrator will get automatic notifications about new releases, and clear notification that the site has security problems.
-Furthermore, any decent Drupalist should follow the Drupal security team publishing, which describes the required patches both for the core and for the supported modules.
+Furthermore, any decent Drupalist should follow the <a href="https://www.drupal.org/security" target=_blank>Drupal security team publishing</a>, which describes the required patches both for the core and for the contrib modules.
 
 
 Now, for the real reason I wanted to write this post.
 I think that any developer or IT guy who thinks that their code can be more secure then an open source code is so wrong, that I don't know from where to start to explain this.
 So many words were already been written about open source vs closed source security, that I don't think I should write more.
-What I want to say is that open source code is not defenetly better then closed source, but in open source code you can tell whether it is good or not, and that what matters is the development process and the development community.
+
+Open source code is not defenetly better then closed source, but in open source code you can tell whether it is good or not, and nothing is hidden.
+What matters in open source projects is the development process and the development community, and not the name of the company or the license agreement.
+
