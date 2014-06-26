@@ -22,7 +22,8 @@ But meanwhile, he said that by default, the WordPress core level is being automa
 Having automatic upgrade might be a simple solution for non-critical sites, but I don't see how real production sites can allow this, since I am certain there is no 100% future-proof code in WordPress that makes it unbreakable.
 When you own a site you need to handle the upgrade by yourself or by the hosting company that gives you this service, but it all needs to be done only after proper testing to verify it will work.
 
-In Drupal eco-system, by default the administrator will get automatic notifications about new releases, and clear notification that the site has security problems.
+In Drupal eco-system, by default the administrator will get automatic notifications about new releases, and clear notification that the site has security problems,
+both from core and from contrib modules.
 Furthermore, any decent Drupalist should follow the <a href="https://www.drupal.org/security" target=_blank>Drupal security team publishing</a>, which describes the required patches both for the core and for the contrib modules.
 
 
@@ -33,3 +34,5 @@ So many words were already been written about open source vs closed source secur
 Open source code is not defenetly better then closed source, but in open source code you can tell whether it is good or not, and nothing is hidden.
 What matters in open source projects is the development process and the development community, and not the name of the company or the license agreement.
 
+Here is a nice infographic describing the security handling process in Drupal, taken from <a>Aqcuia blog</a>.
+http://www.acquia.com/blog/keeping-drupal-secure
